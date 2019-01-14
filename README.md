@@ -1,13 +1,19 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Pet Booking Logs, is micro service, focused on collect logs from entire Pet Booking environment.
 
-Things you may want to cover:
+We're running this project with the following configuration:
 
 * Ruby version
+```
+2.5.1
+```
 
 * System dependencies
+If you're using MacOS, you'll need to install MongoDB:
+```
+brew install mongod
+```
 
 * Configuration
 
