@@ -2,9 +2,9 @@ class LogsController < ApplicationController
   def create
     log = Log.new(log_params)
     if log.save
-      render nothing: true, status: :ok
+      render json: log, status: :ok
     else
-      render nothing: true, status: :unprocessable_entity
+      render json: { 'error': 'Não foi possível salvar o registro' }, status: :unprocessable_entity
     end
   end
 

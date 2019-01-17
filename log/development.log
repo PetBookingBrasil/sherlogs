@@ -1,1 +1,172 @@
 Overwriting existing field created_at in class Log.
+Started POST "/logs/create" for 127.0.0.1 at 2019-01-17 15:04:11 -0200
+Overwriting existing field created_at in class Log.
+Processing by LogsController#create as JSON
+  Parameters: {"object_type"=>"user", "object_id"=>"1", "author_id"=>1, "serialized_object"=>{"name"=>"teste"}, "log"=>{"object_type"=>"user", "object_id"=>"1", "author_id"=>1, "action"=>"create", "serialized_object"=>{"name"=>"teste"}}}
+MONGODB | EVENT: #<Mongo::Monitoring::Event::TopologyOpening topology=Unknown>
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | EVENT: #<Mongo::Monitoring::Event::ServerOpening address=localhost:27017 topology=Unknown>
+MONGODB | Server localhost:27017 initializing.
+MONGODB | EVENT: #<Mongo::Monitoring::Event::TopologyChanged prev=Unknown new=Single>
+MONGODB | Topology type 'unknown' changed to type 'single'.
+MONGODB | EVENT: #<Mongo::Monitoring::Event::ServerDescriptionChanged>
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'standalone'.
+MONGODB | EVENT: #<Mongo::Monitoring::Event::TopologyChanged prev=Single new=Single>
+MONGODB | There was a change in the members of the 'single' topology.
+MONGODB | localhost:27017 | petbooking_logs_development.insert | STARTED | {"insert"=>"logs", "documents"=>[{"_id"=>BSON::ObjectId('5c40b58b1e33885feb0ff4aa'), "object_type"=>"user", "object_id"=>"1", "author_id"=>1, "action"=>"delete", "serialized_object"=>{"name"=>"teste"}, "updated_at"=>2019-01-17 17:04:11 UTC, "created_a...
+MONGODB | localhost:27017 | petbooking_logs_development.insert | SUCCEEDED | 0.512s
+Completed 200 OK in 518ms (Views: 0.3ms)
+
+
+Started POST "/logs/create" for 127.0.0.1 at 2019-01-17 15:12:26 -0200
+Processing by LogsController#create as JSON
+  Parameters: {"object_type"=>"user", "object_id"=>"1", "author_id"=>1, "serialized_object"=>{"name"=>"teste"}, "log"=>{"object_type"=>"user", "object_id"=>"1", "author_id"=>1, "action"=>"create", "serialized_object"=>{"name"=>"teste"}}}
+MONGODB | localhost:27017 | petbooking_logs_development.insert | STARTED | {"insert"=>"logs", "documents"=>[{"_id"=>BSON::ObjectId('5c40b77a1e33885feb0ff4ab'), "object_type"=>"user", "object_id"=>"1", "author_id"=>1, "action"=>"delete", "serialized_object"=>{"name"=>"teste"}, "updated_at"=>2019-01-17 17:12:26 UTC, "created_a...
+MONGODB | localhost:27017 | petbooking_logs_development.insert | SUCCEEDED | 0.001s
+Completed 200 OK in 5ms (Views: 0.2ms)
+
+
+Started POST "/logs/create" for 127.0.0.1 at 2019-01-17 15:12:28 -0200
+Processing by LogsController#create as JSON
+  Parameters: {"object_type"=>"user", "object_id"=>"1", "author_id"=>1, "serialized_object"=>{"name"=>"teste"}, "log"=>{"object_type"=>"user", "object_id"=>"1", "author_id"=>1, "action"=>"create", "serialized_object"=>{"name"=>"teste"}}}
+MONGODB | localhost:27017 | petbooking_logs_development.insert | STARTED | {"insert"=>"logs", "documents"=>[{"_id"=>BSON::ObjectId('5c40b77c1e33885feb0ff4ac'), "object_type"=>"user", "object_id"=>"1", "author_id"=>1, "action"=>"delete", "serialized_object"=>{"name"=>"teste"}, "updated_at"=>2019-01-17 17:12:28 UTC, "created_a...
+MONGODB | localhost:27017 | petbooking_logs_development.insert | SUCCEEDED | 0.001s
+Completed 200 OK in 5ms (Views: 0.2ms)
+
+
+Started POST "/logs/create" for 127.0.0.1 at 2019-01-17 15:12:29 -0200
+Processing by LogsController#create as JSON
+  Parameters: {"object_type"=>"user", "object_id"=>"1", "author_id"=>1, "serialized_object"=>{"name"=>"teste"}, "log"=>{"object_type"=>"user", "object_id"=>"1", "author_id"=>1, "action"=>"create", "serialized_object"=>{"name"=>"teste"}}}
+MONGODB | localhost:27017 | petbooking_logs_development.insert | STARTED | {"insert"=>"logs", "documents"=>[{"_id"=>BSON::ObjectId('5c40b77d1e33885feb0ff4ad'), "object_type"=>"user", "object_id"=>"1", "author_id"=>1, "action"=>"delete", "serialized_object"=>{"name"=>"teste"}, "updated_at"=>2019-01-17 17:12:29 UTC, "created_a...
+MONGODB | localhost:27017 | petbooking_logs_development.insert | SUCCEEDED | 0.001s
+Completed 200 OK in 5ms (Views: 0.2ms)
+
+
+Started POST "/logs/create" for 127.0.0.1 at 2019-01-17 15:12:30 -0200
+Processing by LogsController#create as JSON
+  Parameters: {"object_type"=>"user", "object_id"=>"1", "author_id"=>1, "serialized_object"=>{"name"=>"teste"}, "log"=>{"object_type"=>"user", "object_id"=>"1", "author_id"=>1, "action"=>"create", "serialized_object"=>{"name"=>"teste"}}}
+MONGODB | localhost:27017 | petbooking_logs_development.insert | STARTED | {"insert"=>"logs", "documents"=>[{"_id"=>BSON::ObjectId('5c40b77e1e33885feb0ff4ae'), "object_type"=>"user", "object_id"=>"1", "author_id"=>1, "action"=>"delete", "serialized_object"=>{"name"=>"teste"}, "updated_at"=>2019-01-17 17:12:30 UTC, "created_a...
+MONGODB | localhost:27017 | petbooking_logs_development.insert | SUCCEEDED | 0.000s
+Completed 200 OK in 2ms (Views: 0.1ms)
+
+
+Started POST "/logs/create" for 127.0.0.1 at 2019-01-17 15:12:31 -0200
+Processing by LogsController#create as JSON
+  Parameters: {"object_type"=>"user", "object_id"=>"1", "author_id"=>1, "serialized_object"=>{"name"=>"teste"}, "log"=>{"object_type"=>"user", "object_id"=>"1", "author_id"=>1, "action"=>"create", "serialized_object"=>{"name"=>"teste"}}}
+MONGODB | localhost:27017 | petbooking_logs_development.insert | STARTED | {"insert"=>"logs", "documents"=>[{"_id"=>BSON::ObjectId('5c40b77f1e33885feb0ff4af'), "object_type"=>"user", "object_id"=>"1", "author_id"=>1, "action"=>"delete", "serialized_object"=>{"name"=>"teste"}, "updated_at"=>2019-01-17 17:12:31 UTC, "created_a...
+MONGODB | localhost:27017 | petbooking_logs_development.insert | SUCCEEDED | 0.001s
+Completed 200 OK in 5ms (Views: 0.2ms)
+
+
+Started POST "/logs/create" for 127.0.0.1 at 2019-01-17 15:12:35 -0200
+Processing by LogsController#create as JSON
+  Parameters: {"object_type"=>"user", "object_id"=>"1", "author_id"=>1, "serialized_object"=>{"name"=>"teste"}, "log"=>{"object_type"=>"user", "object_id"=>"1", "author_id"=>1, "action"=>"create", "serialized_object"=>{"name"=>"teste"}}}
+MONGODB | localhost:27017 | petbooking_logs_development.insert | STARTED | {"insert"=>"logs", "documents"=>[{"_id"=>BSON::ObjectId('5c40b7831e33885feb0ff4b0'), "object_type"=>"user", "object_id"=>"1", "author_id"=>1, "action"=>"delete", "serialized_object"=>{"name"=>"teste"}, "updated_at"=>2019-01-17 17:12:35 UTC, "created_a...
+MONGODB | localhost:27017 | petbooking_logs_development.insert | SUCCEEDED | 0.000s
+Completed 200 OK in 2ms (Views: 0.1ms)
+
+
+Started POST "/logs/create" for 127.0.0.1 at 2019-01-17 15:12:36 -0200
+Processing by LogsController#create as JSON
+  Parameters: {"object_type"=>"user", "object_id"=>"1", "author_id"=>1, "serialized_object"=>{"name"=>"teste"}, "log"=>{"object_type"=>"user", "object_id"=>"1", "author_id"=>1, "action"=>"create", "serialized_object"=>{"name"=>"teste"}}}
+MONGODB | localhost:27017 | petbooking_logs_development.insert | STARTED | {"insert"=>"logs", "documents"=>[{"_id"=>BSON::ObjectId('5c40b7841e33885feb0ff4b1'), "object_type"=>"user", "object_id"=>"1", "author_id"=>1, "action"=>"delete", "serialized_object"=>{"name"=>"teste"}, "updated_at"=>2019-01-17 17:12:36 UTC, "created_a...
+MONGODB | localhost:27017 | petbooking_logs_development.insert | SUCCEEDED | 0.001s
+Completed 200 OK in 5ms (Views: 0.3ms)
+
+
+Started POST "/logs/create" for 127.0.0.1 at 2019-01-17 15:12:37 -0200
+Processing by LogsController#create as JSON
+  Parameters: {"object_type"=>"user", "object_id"=>"1", "author_id"=>1, "serialized_object"=>{"name"=>"teste"}, "log"=>{"object_type"=>"user", "object_id"=>"1", "author_id"=>1, "action"=>"create", "serialized_object"=>{"name"=>"teste"}}}
+MONGODB | localhost:27017 | petbooking_logs_development.insert | STARTED | {"insert"=>"logs", "documents"=>[{"_id"=>BSON::ObjectId('5c40b7851e33885feb0ff4b2'), "object_type"=>"user", "object_id"=>"1", "author_id"=>1, "action"=>"delete", "serialized_object"=>{"name"=>"teste"}, "updated_at"=>2019-01-17 17:12:37 UTC, "created_a...
+MONGODB | localhost:27017 | petbooking_logs_development.insert | SUCCEEDED | 0.001s
+Completed 200 OK in 5ms (Views: 0.2ms)
+
+
+Started POST "/logs/create" for 127.0.0.1 at 2019-01-17 15:12:37 -0200
+Processing by LogsController#create as JSON
+  Parameters: {"object_type"=>"user", "object_id"=>"1", "author_id"=>1, "serialized_object"=>{"name"=>"teste"}, "log"=>{"object_type"=>"user", "object_id"=>"1", "author_id"=>1, "action"=>"create", "serialized_object"=>{"name"=>"teste"}}}
+MONGODB | localhost:27017 | petbooking_logs_development.insert | STARTED | {"insert"=>"logs", "documents"=>[{"_id"=>BSON::ObjectId('5c40b7851e33885feb0ff4b3'), "object_type"=>"user", "object_id"=>"1", "author_id"=>1, "action"=>"delete", "serialized_object"=>{"name"=>"teste"}, "updated_at"=>2019-01-17 17:12:37 UTC, "created_a...
+MONGODB | localhost:27017 | petbooking_logs_development.insert | SUCCEEDED | 0.001s
+Completed 200 OK in 5ms (Views: 0.3ms)
+
+
+Overwriting existing field created_at in class Log.
+MONGODB | EVENT: #<Mongo::Monitoring::Event::TopologyOpening topology=Unknown>
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | EVENT: #<Mongo::Monitoring::Event::ServerOpening address=localhost:27017 topology=Unknown>
+MONGODB | Server localhost:27017 initializing.
+MONGODB | EVENT: #<Mongo::Monitoring::Event::TopologyChanged prev=Unknown new=Single>
+MONGODB | Topology type 'unknown' changed to type 'single'.
+MONGODB | EVENT: #<Mongo::Monitoring::Event::ServerDescriptionChanged>
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'standalone'.
+MONGODB | EVENT: #<Mongo::Monitoring::Event::TopologyChanged prev=Single new=Single>
+MONGODB | There was a change in the members of the 'single' topology.
+MONGODB | localhost:27017 | petbooking_logs_development.find | STARTED | {"find"=>"logs", "filter"=>{}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+MONGODB | localhost:27017 | petbooking_logs_development.find | SUCCEEDED | 0.003s
+MONGODB | localhost:27017 | petbooking_logs_development.count | STARTED | {"count"=>"logs", "query"=>{}}
+MONGODB | localhost:27017 | petbooking_logs_development.count | SUCCEEDED | 0.001s
+Started POST "/logs/create" for 127.0.0.1 at 2019-01-17 15:13:32 -0200
+Processing by LogsController#create as JSON
+  Parameters: {"object_type"=>"user", "object_id"=>"1", "author_id"=>1, "serialized_object"=>{"name"=>"teste"}, "log"=>{"object_type"=>"user", "object_id"=>"1", "author_id"=>1, "action"=>"create", "serialized_object"=>{"name"=>"teste"}}}
+MONGODB | localhost:27017 | petbooking_logs_development.insert | STARTED | {"insert"=>"logs", "documents"=>[{"_id"=>BSON::ObjectId('5c40b7bc1e33885feb0ff4b4'), "object_type"=>"user", "object_id"=>"1", "author_id"=>1, "action"=>"delete", "serialized_object"=>{"name"=>"teste"}, "updated_at"=>2019-01-17 17:13:32 UTC, "created_a...
+MONGODB | localhost:27017 | petbooking_logs_development.insert | SUCCEEDED | 0.001s
+Completed 200 OK in 3ms (Views: 0.1ms)
+
+
+MONGODB | localhost:27017 | petbooking_logs_development.count | STARTED | {"count"=>"logs", "query"=>{}}
+MONGODB | localhost:27017 | petbooking_logs_development.count | SUCCEEDED | 0.001s
+Started POST "/logs/create" for 127.0.0.1 at 2019-01-17 15:20:05 -0200
+  
+SyntaxError (/home/petbooking/sherlogs/app/controllers/logs_controller.rb:7: syntax error, unexpected ':', expecting '}'
+      render { error: 'Não foi possível salvar o...
+                    ^
+/home/petbooking/sherlogs/app/controllers/logs_controller.rb:7: syntax error, unexpected '}', expecting keyword_end
+... possível salvar o registro' }, status: :unprocessable_enti...
+...                              ^):
+  
+app/controllers/logs_controller.rb:7: syntax error, unexpected ':', expecting '}'
+app/controllers/logs_controller.rb:7: syntax error, unexpected '}', expecting keyword_end
+Started POST "/logs/create" for 127.0.0.1 at 2019-01-17 15:20:33 -0200
+  
+SyntaxError (/home/petbooking/sherlogs/app/controllers/logs_controller.rb:7: syntax error, unexpected ':', expecting '}'
+      render { 'error': 'Não foi possível salvar o...
+                      ^
+/home/petbooking/sherlogs/app/controllers/logs_controller.rb:7: syntax error, unexpected '}', expecting keyword_end
+... possível salvar o registro' }, status: :unprocessable_enti...
+...                              ^):
+  
+app/controllers/logs_controller.rb:7: syntax error, unexpected ':', expecting '}'
+app/controllers/logs_controller.rb:7: syntax error, unexpected '}', expecting keyword_end
+Started POST "/logs/create" for 127.0.0.1 at 2019-01-17 15:21:30 -0200
+Overwriting existing field created_at in class Log.
+Processing by LogsController#create as JSON
+  Parameters: {"object_type"=>"user", "object_id"=>"1", "author_id"=>1, "serialized_object"=>{"name"=>"teste"}, "log"=>{"object_type"=>"user", "object_id"=>"1", "author_id"=>1, "action"=>"create", "serialized_object"=>{"name"=>"teste"}}}
+MONGODB | EVENT: #<Mongo::Monitoring::Event::TopologyOpening topology=Unknown>
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | EVENT: #<Mongo::Monitoring::Event::ServerOpening address=localhost:27017 topology=Unknown>
+MONGODB | Server localhost:27017 initializing.
+MONGODB | EVENT: #<Mongo::Monitoring::Event::TopologyChanged prev=Unknown new=Single>
+MONGODB | Topology type 'unknown' changed to type 'single'.
+MONGODB | EVENT: #<Mongo::Monitoring::Event::ServerDescriptionChanged>
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'standalone'.
+MONGODB | EVENT: #<Mongo::Monitoring::Event::TopologyChanged prev=Single new=Single>
+MONGODB | There was a change in the members of the 'single' topology.
+MONGODB | localhost:27017 | petbooking_logs_development.insert | STARTED | {"insert"=>"logs", "documents"=>[{"_id"=>BSON::ObjectId('5c40b99a1e33886565262448'), "object_type"=>"user", "object_id"=>"1", "author_id"=>1, "action"=>"delete", "serialized_object"=>{"name"=>"teste"}, "updated_at"=>2019-01-17 17:21:30 UTC, "created_a...
+MONGODB | localhost:27017 | petbooking_logs_development.insert | SUCCEEDED | 0.001s
+Completed 200 OK in 5ms (Views: 0.5ms)
+
+
+Started POST "/logs/create" for 127.0.0.1 at 2019-01-17 15:46:14 -0200
+Processing by LogsController#create as JSON
+  Parameters: {"object_type"=>"user", "log"=>{"object_type"=>"user"}}
+Completed 422 Unprocessable Entity in 23ms (Views: 0.2ms)
+
+
+Started POST "/logs/create" for 127.0.0.1 at 2019-01-17 15:49:51 -0200
+Processing by LogsController#create as JSON
+  Parameters: {"object_type"=>"user", "object_id"=>"1", "author_id"=>1, "serialized_object"=>{"name"=>"teste"}, "log"=>{"object_type"=>"user", "object_id"=>"1", "author_id"=>1, "action"=>"create", "serialized_object"=>{"name"=>"teste"}}}
+MONGODB | localhost:27017 | petbooking_logs_development.insert | STARTED | {"insert"=>"logs", "documents"=>[{"_id"=>BSON::ObjectId('5c40c03f1e33886565262449'), "object_type"=>"user", "object_id"=>"1", "author_id"=>1, "action"=>"delete", "serialized_object"=>{"name"=>"teste"}, "updated_at"=>2019-01-17 17:49:51 UTC, "created_a...
+MONGODB | localhost:27017 | petbooking_logs_development.insert | SUCCEEDED | 0.000s
+Completed 200 OK in 4ms (Views: 0.5ms)
+
+
