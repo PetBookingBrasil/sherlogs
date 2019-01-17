@@ -16,8 +16,8 @@ class LogsController < ApplicationController
       :object_id,
       :author_id,
       :action,
-      :serialized_object,
-      :extras
+      :serialized_object => {},
+      :extras => {}
     )
   end
 end
