@@ -9,4 +9,6 @@ class Log
   field :created_at, type: DateTime
   field :serialized_object, type: Hash
   field :extras, type: Hash
+
+  validates :object_type, :object_id, :author_id, :action, :serialized_object, presence: true
 end
