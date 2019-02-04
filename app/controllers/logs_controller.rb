@@ -13,6 +13,6 @@ class LogsController < ApplicationController
   private
 
   def encrypted_param
-    params.require(:encrypted_param)
+    params.require(:log)
   end
 end
