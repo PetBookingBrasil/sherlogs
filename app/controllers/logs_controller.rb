@@ -1,6 +1,6 @@
 class LogsController < ApplicationController
   def create
-    log_decoded = eval((::Authenticator.new(encrypted_param).decode).first)
+    log_decoded = (::Authenticator.new(encrypted_param).decode).first
 
     log = Log.new(log_decoded)
     if log.save

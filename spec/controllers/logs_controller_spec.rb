@@ -16,7 +16,7 @@ describe LogsController do
   describe '#create' do
     context 'when valid' do
       it 'create a new log' do
-        @coded_params = Authenticator.new(@valid_params.to_s).encode
+        @coded_params = Authenticator.new(@valid_params).encode
         post :create, params: { log: @coded_params }
         expect(response).to have_http_status(:ok)
       end
@@ -24,7 +24,7 @@ describe LogsController do
 
     context 'when invalid' do
       it 'dont create a new log' do
-        @coded_params = Authenticator.new(@valid_params.except!(:object_type).to_s).encode
+        @coded_params = Authenticator.new(@valid_params.except!(:object_type)).encode
         post :create, params: { log: @coded_params }
         expect(response).to have_http_status(:unprocessable_entity)
       end
