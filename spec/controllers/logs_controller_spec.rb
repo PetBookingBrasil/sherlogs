@@ -3,7 +3,7 @@ require 'rails_helper'
 
 describe LogsController do
 
-  before do 
+  before do
     @valid_params = {
       object_type: 'user',
       object_id: '1',
@@ -16,15 +16,17 @@ describe LogsController do
   describe '#create' do
     context 'when valid' do
       it 'create a new log' do
-        post :create, params: { log: @valid_params } 
+        @coded_params = Authenticator.new(@valid_params).encode
+        post :create, params: { log: @coded_params }
         expect(response).to have_http_status(:ok)
       end
     end
 
-    context 'when valid' do
-      it 'dont create a new log' do  
-        post :create, params: { log: @valid_params.except!(:object_type) }
-        expect(response).to have_http_status(:unprocessable_entity) 
+    context 'when invalid' do
+      it 'dont create a new log' do
+        @coded_params = Authenticator.new(@valid_params.except!(:object_type)).encode
+        post :create, params: { log: @coded_params }
+        expect(response).to have_http_status(:unprocessable_entity)
       end
     end
   end

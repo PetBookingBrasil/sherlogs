@@ -1,6 +1,8 @@
 class LogsController < ApplicationController
   def create
-    log = Log.new(log_params)
+    log_decoded = (::Authenticator.new(encrypted_param).decode).first
+
+    log = Log.new(log_decoded)
     if log.save
       render json: log, status: :ok
     else
@@ -10,14 +12,7 @@ class LogsController < ApplicationController
 
   private
 
-  def log_params
-    params.require(:log).permit(
-      :object_type,
-      :object_id,
-      :author_id,
-      :action,
-      :serialized_object => {},
-      :extras => {}
-    )
+  def encrypted_param
+    params.require(:log)
   end
 end
