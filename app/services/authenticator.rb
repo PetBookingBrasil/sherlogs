@@ -6,10 +6,10 @@ class Authenticator
   end
 
   def encode
-    JWT.encode(@payload, ENV['JWS_SECRET_TOKEN'], ALGORITHM)
+    JWT.encode(@payload, ENV['JWT_SECRET_TOKEN'], ALGORITHM)
   end
 
   def decode
-    JWT.decode(@payload, ENV['JWS_SECRET_TOKEN'], ALGORITHM)
+    JWT.decode(@payload, ENV['JWT_SECRET_TOKEN'], ALGORITHM)
   end
 end
